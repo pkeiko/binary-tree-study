@@ -14,7 +14,7 @@ class BinarySearchTree:
         self.root = None
 
     def create(self, val):  
-        if self.root == None:
+        if self.root is None:
             self.root = Node(val)
         else:
             current = self.root
@@ -101,11 +101,11 @@ def height_verison_3(root):
         return 0
     else:
         if root.left is None:
-            return height(root.right)+1
+            return height_verison_3(root.right)+1
         elif root.right is None:
-            return height(root.left)+1
+            return height_verison_3(root.left)+1
         else:
-            return max(height(root.right), height(root.left))+1
+            return max(height_verison_3(root.right), height_verison_3(root.left))+1
             
 ''' Version 4
     Similar to previous versions but instead of checking if the node is a leaf,
