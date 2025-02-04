@@ -1,7 +1,4 @@
-from binary_search_tree import BinarySearchTree
-
-def isValidNode(node):
-    return node is not None
+from binary_search_tree import BinarySearchTree, isValidNode
 
 ''' Version 1 
     Checks the height of the tree by iterating through the nodes in each level

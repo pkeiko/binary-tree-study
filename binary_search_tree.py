@@ -44,3 +44,6 @@ class Node:
 
        // this is a node of the tree , which contains info as data, left , right
 '''
+
+def isValidNode(node):
+    return node is not None
