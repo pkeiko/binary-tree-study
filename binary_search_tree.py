@@ -8,6 +8,9 @@ class Node:
     def __str__(self):
         return str(self.info) 
 
+    def swapNodes(self):
+        self.left, self.right = self.right, self.left
+
 class BinarySearchTree:
     def __init__(self): 
         self.root = None
